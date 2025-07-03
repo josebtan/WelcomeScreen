@@ -1,0 +1,14 @@
+useResourcePack:
+  enabled: true
+  url: "https://download.mc-packs.net/pack/33bd85c3da6193867342e042e89c063b36a58930.zip"
+  hash: "33bd85c3da6193867342e042e89c063b36a58930"
+
+messages:
+  login-success: "Login successful. Welcome!"
+  invalid-password: "Incorrect password. Please try again."
+  register-success: "Registration successful."
+  player-already-registered: "This player is already registered."
+  quit: "Quit"
+  quit-message: "You have left the server."
+  enter-password: "Enter your password"
+

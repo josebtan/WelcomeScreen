@@ -1,0 +1,31 @@
+name: CustomLoginScreen
+version: '1.0.2'
+main: jb.minecolab.customLoginScreen.CustomLoginScreen
+api-version: '1.18'
+prefix: CLS
+load: STARTUP
+authors: [ josetan ]
+description: A GUI-based login system inspired by the AuthMe plugin
+
+commands:
+  cls:
+    description: "Main command for the CustomLoginScreen plugin."
+    usage: "/cls <reload|change|delplayer|chplayer>"
+    aliases: [customlogin]
+    permission: "customloginscreen.use"
+    subcommands:
+      reload:
+        description: "Reloads the CustomLoginScreen plugin configuration."
+        permission: "customloginscreen.reload"
+      change:
+        description: "Allows a player to change their password."
+        usage: "/cls change <oldPassword> <newPassword>"
+        permission: "customloginscreen.changepassword"
+      delplayer:
+        description: "Allows an admin to delete a player's account."
+        usage: "/cls delplayer <playerName>"
+        permission: "customloginscreen.admin.delete"
+      chplayer:
+        description: "Allows an admin to change another player's password."
+        usage: "/cls chplayer <playerName> <newPassword>"
+        permission: "customloginscreen.admin.changeplayerpassword"
